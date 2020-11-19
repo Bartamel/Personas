@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Personas</string>
+    <string name="titulo_crear_personas">CREATE PEOPLE</string>
+    <string name="cedula">Id</string>
+    <string name="nombre">Name</string>
+    <string name="apellido">Last Name</string>
+    <string name="guardar">Save</string>
+    <string name="limpiar">Clean</string>
+    <string name="titulo_listar_personas">PEOPLE LIST</string>
+    <string name="numero">No.</string>
+    <string name="listar">List</string>
+    <string name="crear">Create</string>
+    <string name="mensaje_guardad_exitosamente">Person saves succesfully</string>
+    <string name="mensaje_error_cedula">Type Id</string>
+    <string name="mensaje_error_nombre">Type name</string>
+    <string name="mensaje_error_apellido">Type Lastname</string>
+</resources>

@@ -24,13 +24,33 @@ public class CrearPersonas extends AppCompatActivity {
         String ced, nom, apel;
         Personas p;
 
-        ced=cedula.getText().toString();
-        nom=nombre.getText().toString();
-        apel=apellido.getText().toString();
-        p= new Personas(ced,nom,apel);
-        p.guardar();
-        Toast.makeText(this, R.string.mensaje_guardad_exitosamente, Toast.LENGTH_LONG).show();
-        limpiar();
+        if (validar()) {
+            ced = cedula.getText().toString();
+            nom = nombre.getText().toString();
+            apel = apellido.getText().toString();
+            p = new Personas(ced, nom, apel);
+            p.guardar();
+            Toast.makeText(this, R.string.mensaje_guardad_exitosamente, Toast.LENGTH_LONG).show();
+            limpiar();
+        }
+    }
+    public boolean validar(){
+        if(cedula.getText().toString().isEmpty()){
+            cedula.setError(getString(R.string.mensaje_error_cedula));
+            cedula.requestFocus();
+            return false;
+        }
+        if(nombre.getText().toString().isEmpty()){
+            nombre.setError(getString(R.string.mensaje_error_nombre));
+            nombre.requestFocus();
+            return false;
+        }
+        if(apellido.getText().toString().isEmpty()){
+            apellido.setError(getString(R.string.mensaje_error_apellido));
+            apellido.requestFocus();
+            return false;
+        }
+        return true;
     }
     public void limpiar(View v){
         limpiar();

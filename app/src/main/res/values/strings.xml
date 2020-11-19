@@ -11,6 +11,9 @@
     <string name="listar">Listar</string>
     <string name="crear">Crear</string>
     <string name="mensaje_guardad_exitosamente">Persona guardada exitosamente</string>
+    <string name="mensaje_error_cedula">Ingrese la cédula</string>
+    <string name="mensaje_error_nombre">Ingrese el nombre</string>
+    <string name="mensaje_error_apellido">Ingrese el apellido</string>
     <string-array name="opciones">
         <item>@string/crear</item>
         <item>@string/listar</item>
