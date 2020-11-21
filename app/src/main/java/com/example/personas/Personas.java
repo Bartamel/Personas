@@ -6,11 +6,13 @@ public class Personas {
     private String cedula;
     private String nombre;
     private String apellido;
+    private int foto;
 
     public Personas(String cedula, String nombre, String apellido){
         this.cedula=cedula;
         this.nombre=nombre;
         this.apellido=apellido;
+        this.foto=foto;
     }
 
     public String getCedula() {
@@ -23,6 +25,14 @@ public class Personas {
 
     public String getNombre() {
         return nombre;
+    }
+
+    public int getFoto() {
+        return foto;
+    }
+
+    public void setFoto(int foto) {
+        this.foto = foto;
     }
 
     public void setNombre(String nombre) {
