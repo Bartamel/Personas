@@ -8,7 +8,7 @@ public class Personas {
     private String apellido;
     private int foto;
 
-    public Personas(String cedula, String nombre, String apellido){
+    public Personas(String cedula, String nombre, String apellido, int foto){
         this.cedula=cedula;
         this.nombre=nombre;
         this.apellido=apellido;

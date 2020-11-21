@@ -43,6 +43,7 @@ public class AdaptadorPersona extends BaseAdapter {
 
         //
         LayoutInflater inf=(LayoutInflater) contexto.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        v = inf.inflate(R.layout.item_persona, null);
         ImageView foto=v.findViewById(R.id.imgfoto);
         TextView cedula=v.findViewById(R.id.lblCedulap);
         TextView nombre=v.findViewById(R.id.lblNombrep);
@@ -53,7 +54,7 @@ public class AdaptadorPersona extends BaseAdapter {
 
         //Setear los elementos a la vista
 
-        foto.setImageDrawable(res.getDrawable(p.))
+        foto.setImageDrawable(res.getDrawable(p.getFoto()));
         cedula.setText(p.getCedula());
         nombre.setText(p.getNombre());
         apellido.setText(p.getApellido());
